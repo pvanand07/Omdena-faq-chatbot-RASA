@@ -1,0 +1,101 @@
+#### This file contains tests to evaluate that your bot behaves as expected.
+#### If you want to learn more, please see the docs: https://rasa.com/docs/rasa/testing-your-assistant
+
+- story: Ask Omdena Overview
+  steps:
+  - user: |
+      What is Omdena?
+    intent: ask_omdena
+  - action: utter_omdena_overview
+
+- story: Ask AI Challenge
+  steps:
+  - user: |
+      How does an Omdena AI challenge work?
+    intent: ask_ai_challenge
+  - action: utter_ai_challenge_description
+
+- story: Ask Collaborator Benefits
+  steps:
+  - user: |
+      What are the benefits of being an Omdena collaborator?
+    intent: ask_collaborator_benefits
+  - action: utter_collaborator_benefits
+
+- story: Ask Engage Collaborator
+  steps:
+  - user: |
+      How can I engage as a collaborator?
+    intent: ask_engage_collaborator
+  - action: utter_engage_collaborator
+
+- story: Ask No AI Experience
+  steps:
+  - user: |
+      What if I have no experience in AI?
+    intent: ask_no_ai_experience
+  - action: utter_no_ai_experience
+
+- story: Ask Participation Assessment
+  steps:
+  - user: |
+      How is participation assessed in an Omdena challenge?
+    intent: ask_participation_assessment
+  - action: utter_participation_assessment
+
+- story: Ask Website Info
+  steps:
+  - user: |
+      Where can I find more information about Omdena?
+    intent: ask_website_info
+  - action: utter_website_info
+
+- story: Ask Omdena Works
+  steps:
+  - user: |
+      How does Omdena work?
+    intent: ask_omdena_works
+  - action: utter_omdena_works
+
+- story: Ask Projects
+  steps:
+  - user: |
+      What kind of projects does Omdena work on?
+    intent: ask_projects
+  - action: utter_projects
+
+- story: Ask Data Privacy
+  steps:
+  - user: |
+      How does Omdena ensure data privacy and confidentiality?
+    intent: ask_data_privacy
+  - action: utter_data_privacy
+
+- story: Ask Get Involved
+  steps:
+  - user: |
+      How can my organization get involved with Omdena?
+    intent: ask_get_involved
+  - action: utter_get_involved
+
+- story: Ask Expertise
+  steps:
+  - user: |
+      What kind of expertise does Omdena have?
+    intent: ask_expertise
+  - action: utter_expertise
+
+- story: Ask Quality Assurance
+  steps:
+  - user: |
+      How does Omdena ensure the quality of its work?
+    intent: ask_quality_assurance
+  - action: utter_quality_assurance
+
+- story: Ask Impact
+  steps:
+  - user: |
+      What is the impact of Omdena's work?
+    intent: ask_impact
+  - action: utter_impact
+

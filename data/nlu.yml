@@ -1,0 +1,126 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: ask_omdena
+  examples: |
+    - What is Omdena?
+    - Tell me about Omdena
+    - Explain Omdena
+    - What does Omdena do?
+
+- intent: ask_ai_challenge
+  examples: |
+    - How does an Omdena AI challenge work?
+    - Explain Omdena AI challenge
+    - What are the principles of Omdena AI challenges?
+    - How can I participate in an Omdena AI challenge?
+
+- intent: ask_collaborator_benefits
+  examples: |
+    - What are the benefits of being an Omdena collaborator?
+    - Tell me about Omdena collaborator benefits
+    - Why should I collaborate with Omdena?
+    - What advantages do Omdena collaborators get?
+
+- intent: ask_engage_collaborator
+  examples: |
+    - How can I engage as a collaborator?
+    - What should I do to become an Omdena collaborator?
+    - Can you guide me on engaging with Omdena?
+
+- intent: ask_no_ai_experience
+  examples: |
+    - What if I have no experience in AI?
+    - Can I join Omdena without AI experience?
+    - Is AI expertise required to participate in Omdena challenges?
+
+- intent: ask_participation_assessment
+  examples: |
+    - How is participation assessed in an Omdena challenge?
+    - What criteria are used to evaluate participation in Omdena challenges?
+    - How do you measure the involvement of collaborators in a challenge?
+
+- intent: ask_website_info
+  examples: |
+    - Where can I find more information about Omdena?
+    - Tell me about the Omdena website
+    - How can I access details about Omdena on the internet?
+
+- intent: ask_omdena_works
+  examples: |
+    - What is Omdena's working approach?
+    - How does Omdena work?
+    - Explain how Omdena operates.
+
+- intent: ask_projects
+  examples: |
+    - What kind of projects does Omdena work on?
+    - Can you give me examples of Omdena projects?
+    - Tell me about the projects undertaken by Omdena.
+
+- intent: ask_data_privacy
+  examples: |
+    - How does Omdena ensure data privacy and confidentiality?
+    - What measures are taken to protect data privacy at Omdena?
+    - Is my data safe when collaborating with Omdena?
+
+- intent: ask_get_involved
+  examples: |
+    - How can my organization get involved with Omdena?
+    - Is there a way for my company to collaborate with Omdena?
+    - Can you guide me on how to partner with Omdena?
+
+- intent: ask_expertise
+  examples: |
+    - What kind of expertise does Omdena have?
+    - Tell me about the skills and knowledge of Omdena collaborators.
+    - What expertise is available in the Omdena community?
+
+- intent: ask_quality_assurance
+  examples: |
+    - How does Omdena ensure the quality of its work?
+    - What processes are in place to maintain work quality at Omdena?
+    - Is there a quality assurance mechanism at Omdena?
+
+- intent: ask_impact
+  examples: |
+    - What is the impact of Omdena's work?
+    - How has Omdena contributed to social good?
+    - Tell me about the positive outcomes of Omdena projects.
+
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
