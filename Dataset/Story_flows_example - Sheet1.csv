@@ -1,74 +1,74 @@
 Story_1,Intent/Action name,story_2,Intent/Action Name,story_3,Intent/Action Name,story_4,Intent/Action Name
 How can I join Omdena's network as a professional?,joining_omdena_network,What are Omdena Projects?,omdena_projects,Which programming languages are used in the projects?,programming_languages,Tell me about omdena community,about_community
-"If you are a professional looking to join Omdena's network, there are several ways to get involved:
-",utter_joining_omdena_network,"Omdena Projects are real-world challenges that address social good and are brought to Omdena by NGOs, organizations, and startups. ",utter_omdena_projects,"In Omdena projects, several programming languages are used, with a focus on Python. Here are the programming languages commonly used in Omdena projects:
+"If you are a professional looking to join Omdena's network, there are several ways to get involved.
+",utter_joining_omdena_network,"Omdena Projects are real.world challenges that address social good and are brought to Omdena by NGOs, organizations, and startups. ",utter_omdena_projects,"In Omdena projects, several programming languages are used, with a focus on Python. Here are the programming languages commonly used in Omdena projects.
 
-1. Python: Python is widely used in Omdena projects and is the most popular coding language among deep learning engineers and data scientists. It is easy to pick up and widely used across industries and specialties such as data science
+1. Python. Python is widely used in Omdena projects and is the most popular coding language among deep learning engineers and data scientists. It is easy to pick up and widely used across industries and specialties such as data science
 
 Other programming languages may also be used depending on the specific project requirements and goals. However, Python is the primary language used in Omdena projects due to its versatility and extensive libraries and frameworks for machine learning and data science.
 
 It's worth noting that Omdena projects cover a wide range of topics and domains, including machine learning, data science, computer vision, and natural language processing. The choice of programming language may vary depending on the specific project and its requirements.
 
-Overall, Python is the main programming language used in Omdena projects, with its rich ecosystem of libraries and frameworks making it well-suited for data science and machine learning tasks.",utter_programming_languages,"Omdena is a global community of AI engineers and data scientists who collaborate to build impactful AI solutions for real-world problems. The platform is mission-driven, aiming to provide a platform for the global community of AI engineers to gather and collaboratively build solutions ",utter_about_community
+Overall, Python is the main programming language used in Omdena projects, with its rich ecosystem of libraries and frameworks making it well.suited for data science and machine learning tasks.",utter_programming_languages,"Omdena is a global community of AI engineers and data scientists who collaborate to build impactful AI solutions for real.world problems. The platform is mission.driven, aiming to provide a platform for the global community of AI engineers to gather and collaboratively build solutions ",utter_about_community
 How can I become a collaborator,become_collaborator,How can I join a Project?,join_omdena_projects,Which tools are used while working in the project?,tools_used,How to network with other collaborators,networking
-"To become a collaborator in Omdena, follow these steps:
-Complete at least one Omdena 8-Week challenge, Local Chapter Challenge, or Omdena School Course",utter_become_collaborator,"To join an Omdena project, follow these steps:
+"To become a collaborator in Omdena, follow these steps.
+Complete at least one Omdena 8.Week challenge, Local Chapter Challenge, or Omdena School Course",utter_become_collaborator,"To join an Omdena project, follow these steps.
 
-Visit the Omdena website and browse the available projects on the ""Projects"" page or ""Discover Projects"" page under ""Omdena Local Chapters.""",utter_join_omdena_project,"Omdena uses a variety of tools to facilitate collaboration and project management among team members.  Omdena's platform offers a range of tools for collaboration and project management, including Slack, GitHub, Google Drive, Trello, and Zoom. ",utter_tools_used,"To network with other collaborators on Omdena, you can reach out to a Task Leader or Product Owner and offer to pitch in[1]. Omdena's approach is about spurring free ideas and driving true innovation bottom-up, and it is a community-driven organization where people with the right skills and motivation come to collaborate, learn, share, and build solutions together",utter_networking
+Visit the Omdena website and browse the available projects on the ""Projects"" page or ""Discover Projects"" page under ""Omdena Local Chapters.""",utter_join_omdena_project,"Omdena uses a variety of tools to facilitate collaboration and project management among team members.  Omdena's platform offers a range of tools for collaboration and project management, including Slack, GitHub, Google Drive, Trello, and Zoom. ",utter_tools_used,"To network with other collaborators on Omdena, you can reach out to a Task Leader or Product Owner and offer to pitch in[1]. Omdena's approach is about spurring free ideas and driving true innovation bottom.up, and it is a community.driven organization where people with the right skills and motivation come to collaborate, learn, share, and build solutions together",utter_networking
 what are the requirements of becoming a collaborator?,requirements_collaborator,How can i find a project for myself?,find_project_myself,How do we get the data for the project?,data_accessing,What do i get by collaborating in a project?,collaborator_benefit
-"To become a collaborator in Omdena, you need to meet the following requirements:
+"To become a collaborator in Omdena, you need to meet the following requirements.
 
 1. You must have an internet connection
 2.You must be over the age of 18, with a few exceptions
-3.You must complete at least one Omdena 8-Week challenge, Local Chapter Challenge, or Omdena School Course
+3.You must complete at least one Omdena 8.Week challenge, Local Chapter Challenge, or Omdena School Course
 4.The challenges require more than 15 hours a week, regular contribution with a weekly assessment, as well as vanguard engagement, creativity, and motivation
 .
 Once you have completed a challenge, you can reach out to a Task Leader or Product Lead and offer to pitch in. For more details visit,
-https://omdena.com/collaborator_onboarding/
+https.//omdena.com/collaborator_onboarding/
 ",utter_requirements_collaborator,You may choose a project related to the skill you want to learn and the field you are interested in,utter_find_project_myself,"To obtain data for Omdena projects, the platform leverages its collaborative platform and diverse talent pool to find innovative ways of collecting and preparing data for powerful AI solutions. The projects make use of a wide range of datasets, including data from satellite imagery, ground surveys, mobile phone data, and other sources. The specific process of data collection may vary depending on the project requirements",utter_data_accessing,"Collaborating in an Omdena project provides several benefits. Firstly, it allows you to work with people from different backgrounds and countries, and learn from each other while building solutions to solve social and environmental issues",utter_collaborator_benefit
 How can I apply to be a collaborator?,apply_collaborator,What is the process of working in a project?,working_process,,,,
-"The application process to become a collaborator in Omdena involves the following steps:
+"The application process to become a collaborator in Omdena involves the following steps.
 
-1. Apply: To apply, visit the Omdena website and click on the ""Apply Now"" button at the bottom of the challenge you are interested in joining.
+1. Apply. To apply, visit the Omdena website and click on the ""Apply Now"" button at the bottom of the challenge you are interested in joining.
 
-2. Secure your time: Omdena projects are real-world projects that require a significant time commitment. Make sure you have enough hours per week to dedicate to the project.
+2. Secure your time. Omdena projects are real.world projects that require a significant time commitment. Make sure you have enough hours per week to dedicate to the project.
 
-3. Increase your chances: Before applying for a challenge, you can increase your chances of being selected by gaining first-hand experience with Omdena through participation in a Local Chapter Project or Omdena School Courses.
+3. Increase your chances. Before applying for a challenge, you can increase your chances of being selected by gaining first.hand experience with Omdena through participation in a Local Chapter Project or Omdena School Courses.
 
-4. Collaboration skills: Successful collaboration is essential in Omdena. You should be comfortable working with a team, receiving critical feedback, and learning from others.
+4. Collaboration skills. Successful collaboration is essential in Omdena. You should be comfortable working with a team, receiving critical feedback, and learning from others.
 
-5. Technical skills: While specific technical skills may vary depending on the challenge, having a solid foundation in data science and machine learning is important.
+5. Technical skills. While specific technical skills may vary depending on the challenge, having a solid foundation in data science and machine learning is important.
 
-6. Communication skills: Being able to communicate your ideas and results clearly is crucial. You will have the opportunity to present your work to your peers and the community.
+6. Communication skills. Being able to communicate your ideas and results clearly is crucial. You will have the opportunity to present your work to your peers and the community.
 
-7. Engagement and motivation: Omdena challenges require more than 15 hours a week of active participation, regular contribution, and vanguard engagement. You should demonstrate creativity, motivation, and a willingness to learn.
+7. Engagement and motivation. Omdena challenges require more than 15 hours a week of active participation, regular contribution, and vanguard engagement. You should demonstrate creativity, motivation, and a willingness to learn.
 
 Once you have completed the application process and have been selected as a collaborator, you can engage with Task Leaders or Product Owners and offer to pitch in. Transparent communication and reaching out to other collaborators for guidance are also encouraged.
-",utter_apply_collaborator,"The process of working in an Omdena project involves the following steps:
+",utter_apply_collaborator,"The process of working in an Omdena project involves the following steps.
 
-1. Onboarding: Once you have been selected as a collaborator, you will go through an onboarding process that includes getting familiar with the technical infrastructure and engaging with other collaborators who have worked on previous Omdena projects for guidance
+1. Onboarding. Once you have been selected as a collaborator, you will go through an onboarding process that includes getting familiar with the technical infrastructure and engaging with other collaborators who have worked on previous Omdena projects for guidance
 
-2. Product Lead: There will be a Product Lead appointed to the project who will make sure the project is executed successfully in the 2-month timeline. He/She will be responsible for scheduling the weekly team meeting, providing project status reports, and communicating with the Omdena core team on progress
+2. Product Lead. There will be a Product Lead appointed to the project who will make sure the project is executed successfully in the 2.month timeline. He/She will be responsible for scheduling the weekly team meeting, providing project status reports, and communicating with the Omdena core team on progress
 
-3. Technical Infrastructure: Omdena provides a technical infrastructure that includes tools for communication, project management, and data sharing. Collaborators are expected to use these tools to collaborate effectively with other team members
+3. Technical Infrastructure. Omdena provides a technical infrastructure that includes tools for communication, project management, and data sharing. Collaborators are expected to use these tools to collaborate effectively with other team members
 
-4. Weekly Assessment: The challenges require more than 15 hours a week, regular contribution with a weekly assessment, as well as vanguard engagement, creativity, and motivation
+4. Weekly Assessment. The challenges require more than 15 hours a week, regular contribution with a weekly assessment, as well as vanguard engagement, creativity, and motivation
 
-5. Collaboration: Successful collaboration is essential in Omdena. Collaborators should be comfortable working with a team, receiving critical feedback, and learning from others.
+5. Collaboration. Successful collaboration is essential in Omdena. Collaborators should be comfortable working with a team, receiving critical feedback, and learning from others.
 
-6. Communication: Being able to communicate your ideas and results clearly is crucial. You will have the opportunity to present your work to your peers and the community
+6. Communication. Being able to communicate your ideas and results clearly is crucial. You will have the opportunity to present your work to your peers and the community
 
-7. Completion: After successful completion of the project, you can join Omdena's 8-week core challenges, which are professional projects with organizations aiming at solving real-world problems
+7. Completion. After successful completion of the project, you can join Omdena's 8.week core challenges, which are professional projects with organizations aiming at solving real.world problems
 
-You can find the guidelines for working in a project here:https://omdena.com/open-education-onboarding/
+You can find the guidelines for working in a project here.https.//omdena.com/open.education.onboarding/
 ",utter_working_process,,,,
 ,,Which tools are used for collaboration?,collaboration_tools,,,,
-,,"Omdena uses various tools for collaboration, including:
+,,"Omdena uses various tools for collaboration, including.
 
-1. Slack: Omdena uses Slack for communication and collaboration between team members. Slack allows for real-time messaging, file sharing, and video conferencing.
+1. Slack. Omdena uses Slack for communication and collaboration between team members. Slack allows for real.time messaging, file sharing, and video conferencing.
 
-2. GitHub: Omdena uses GitHub for version control and collaboration on code. GitHub allows for easy collaboration on code, tracking changes, and merging code changes.
+2. GitHub. Omdena uses GitHub for version control and collaboration on code. GitHub allows for easy collaboration on code, tracking changes, and merging code changes.
 
-3.Jupyter Notebook: Omdena uses Jupyter Notebook for data analysis and collaboration on data science projects. Jupyter Notebook allows for easy collaboration on data analysis and sharing of code.",utter_collaboration_tools,,,,
+3.Jupyter Notebook. Omdena uses Jupyter Notebook for data analysis and collaboration on data science projects. Jupyter Notebook allows for easy collaboration on data analysis and sharing of code.",utter_collaboration_tools,,,,
 ,,What are the roles and responsibilities of a collaborator?,roles_responsibilities,,,,
 ,,,utter_roles_responsibilities,,,,
