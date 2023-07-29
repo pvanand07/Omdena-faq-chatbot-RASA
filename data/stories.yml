@@ -1,7 +1,7 @@
 version: "3.1"
 
 stories:
-
+##----------- DEFAULT STORIES ----------------##
 - story: Greeting
   steps:
   - intent: greet
@@ -16,6 +16,9 @@ stories:
   steps:
   - intent: omdena_open_positions
   - action: utter_omdena_open_positions
+
+- story: Applying at omdena
+  steps:
   - intent: applying_at_omdena
   - action: utter_applying_at_omdena
 
@@ -25,21 +28,16 @@ stories:
   - action: utter_requirements_ai_product_carreer
   - intent: process_ai_product_carreer
   - action: utter_process_ai_product_carreer
+
+- story: AI product Careers
+  steps:
   - intent: leadership_in_omdena_challenge
   - action: utter_leadership_in_omdena_challenge
+ 
+- story: Asking for career page link
+  steps:
   - intent: careers_page_link
   - action: utter_careers_page_link
-
-# - story: AI product Careers 2
-#   steps:
-#   - intent: product_manager_role
-#   - action: utter_product_manager_role
-#   - intent: marketing_growth_manager_position
-#   - action: utter_marketing_growth_manager_position
-#   - intent: content_marketer_position
-#   - action: utter_content_marketer_position
-#   - intent: careers_page_link
-#   - action: utter_careers_page_link
 
 - story: Community manager role
   steps:
@@ -47,12 +45,13 @@ stories:
   - action: utter_become_community_manager
   - intent: community_manager_skills
   - action: utter_community_manager_skills
+
+- story: Community manager requirements
+  steps: 
   - intent: community_manager_role
   - action: utter_community_manager_role
   - intent: requirements_community_manager_role
   - action: utter_requirements_community_manager_role
-  - intent: careers_page_link
-  - action: utter_careers_page_link
 
 - story: ai engineer role
   steps:
@@ -60,12 +59,13 @@ stories:
   - action: utter_become_ai_engineer
   - intent: ai_engineer_skills
   - action: utter_ai_engineer_skills
+
+- story: ai engineer requirements
+  steps: 
   - intent: ai_engineer_role
   - action: utter_ai_engineer_role
   - intent: requirements_ai_engineer
   - action: utter_requirements_ai_engineer
-  - intent: careers_page_link
-  - action: utter_careers_page_link
 
 - story: ai researcher role
   steps:
@@ -79,8 +79,6 @@ stories:
   - action: utter_ai_researcher_role
   - intent: requirements_ai_researcher
   - action: utter_requirements_ai_researcher
-  - intent: careers_page_link
-  - action: utter_careers_page_link
 
 - story: interactive_story_1
   steps:
@@ -108,8 +106,6 @@ stories:
   - intent: nlu_fallback
   - intent: requirements_community_manager_role
   - action: utter_requirements_community_manager_role
-  - intent: careers_page_link
-  - action: utter_careers_page_link
 
 - story: interactive_story_1
   steps:
@@ -126,8 +122,6 @@ stories:
   - intent: nlu_fallback
   - intent: requirements_ai_engineer
   - action: utter_requirements_ai_engineer
-  - intent: careers_page_link
-  - action: utter_careers_page_link
 
 - story: interactive_story_1
   steps:
@@ -151,8 +145,6 @@ stories:
   - action: utter_ai_researcher_role
   - intent: requirements_ai_engineer
   - action: utter_requirements_ai_engineer
-  - intent: careers_page_link
-  - action: utter_careers_page_link
 
 - story: interactive_story_1
   steps:
@@ -168,8 +160,6 @@ stories:
   - intent: ai_engineer_role
   - intent: community_manager_role
   - action: utter_community_manager_role
-  - intent: careers_page_link
-  - action: utter_careers_page_link
 
 - story: interactive_story_1
   steps:
@@ -190,3 +180,78 @@ stories:
   - action: utter_become_ai_engineer
   - intent: ai_engineer_role
   - action: utter_ai_engineer_role
+
+##--------------------------- FAQ QUESTIONS --------------------------- ###
+
+- story: Omdena Overview
+  steps:
+  - intent: ask_omdena
+  - action: utter_omdena_overview
+
+- story: Omdena AI Challenge
+  steps:
+  - intent: ask_ai_challenge
+  - action: utter_ai_challenge_description
+
+- story: Omdena Collaborator Benefits
+  steps:
+  - intent: ask_collaborator_benefits
+  - action: utter_collaborator_benefits
+
+- story: Engaging as a Collaborator
+  steps:
+  - intent: ask_engage_collaborator
+  - action: utter_engage_collaborator
+
+- story: No AI Experience
+  steps:
+  - intent: ask_no_ai_experience
+  - action: utter_no_ai_experience
+
+- story: Participation Assessment
+  steps:
+  - intent: ask_participation_assessment
+  - action: utter_participation_assessment
+
+- story: Omdena Website Information
+  steps:
+  - intent: ask_website_info
+  - action: utter_website_info
+
+- story: Omdena Works Overview
+  steps:
+  - intent: ask_omdena_works
+  - action: utter_omdena_works
+
+- story: Omdena Projects
+  steps:
+  - intent: ask_projects
+  - action: utter_projects
+
+- story: Data Privacy and Confidentiality
+  steps:
+  - intent: ask_data_privacy
+  - action: utter_data_privacy
+
+- story: Getting Involved with Omdena
+  steps:
+  - intent: ask_get_involved
+  - action: utter_get_involved
+
+- story: Omdena Expertise
+  steps:
+  - intent: ask_expertise
+  - action: utter_expertise
+
+- story: Quality Assurance at Omdena
+  steps:
+  - intent: ask_quality_assurance
+  - action: utter_quality_assurance
+
+- story: Impact of Omdena's Work
+  steps:
+  - intent: ask_impact
+  - action: utter_impact
+
+
+  ##-----------------ADD YOUR SECTION HERE -----------------------##
