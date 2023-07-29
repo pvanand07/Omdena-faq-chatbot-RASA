@@ -1,5 +1,7 @@
 version: '3.1'
 intents:
+
+## SECTION 1 -COLLABORATOR CAREER PATH
 - ai_engineer_role
 - ai_engineer_skills
 - ai_researcher_role
@@ -25,6 +27,25 @@ intents:
 - requirements_ai_product_carreer
 - requirements_ai_researcher
 - requirements_community_manager_role
+
+## SECTION 2- FAQ QUESTIONS
+- ask_omdena
+- ask_ai_challenge
+- ask_collaborator_benefits
+- ask_engage_collaborator
+- ask_no_ai_experience
+- ask_participation_assessment
+- ask_website_info
+- ask_omdena_works
+- ask_projects
+- ask_data_privacy
+- ask_get_involved
+- ask_expertise
+- ask_quality_assurance
+- ask_impact
+
+## ADD SECTION HERE
+
 responses:
   utter_greet:
   - text: Hello! How can I assist you today?
@@ -32,6 +53,8 @@ responses:
   - text: Good bye
   utter_iamabot:
   - text: I am a bot
+  
+  ## SECTION 1 -COLLABORATOR CAREER PATH
   utter_community_manager_role:
   - text: |-
       The role of a Community Manager at Omdena involves helping to grow the community in new locations and countries
@@ -83,6 +106,50 @@ responses:
   - text: The open positions currently available at Omdena can be found on the careers page.
   utter_careers_page_link:
   - text: 'Visit omdena careers page for more details: https://omdena.com/careers/'
+  utter_omdena_overview:
+  - text: "Omdena is an innovation platform where AI experts from around the world collaborate on building solutions for positive impact."
+  
+  ## SECTION 2- FAQ QUESTIONS
+  utter_ai_challenge_description:
+  - text: "Omdena challenges follow four key principles: bottom-up collaboration, transparent communication, active participation, and asking questions. In an Omdena challenge, there is no top-down structure, and collaborators are expected to show self-drive and self-management capabilities to succeed."
+
+  utter_collaborator_benefits:
+  - text: "Omdena offers several benefits to its collaborators, including the opportunity to work on real-world problems, access to data, diverse opinions, and the chance to drive true innovation."
+
+  utter_engage_collaborator:
+  - text: "To engage as a collaborator, you can reach out to a Task Leader or Product Owner and offer to pitch in. If you need further guidance, you can always ask for help."
+
+  utter_no_ai_experience:
+  - text: "Omdena welcomes collaborators with all levels of experience, including those who are new to AI. The platform provides a learning environment and offers opportunities for skill development."
+
+  utter_participation_assessment:
+  - text: "Your level of participation will be assessed each week based on your collaboration via coding, data wrangling, and taking a leadership role in the challenge. Active participation is important, and those who do not actively participate may be asked to leave the project."
+
+  utter_website_info:
+  - text: "You can visit the Omdena website, specifically the FAQ section, for more information about the platform and how it works."
+
+  utter_omdena_works:
+  - text: "Omdena works by bringing together a global community of data scientists, machine learning engineers, and domain experts to work on AI projects for social good. The community collaborates with mission-driven organizations to build AI solutions that address real-world problems."
+
+  utter_projects:
+  - text: "Omdena works on a wide range of projects, from tackling energy shortages in Nigeria to improving case management for NGOs. The projects are focused on using AI for social good and are designed to have a positive impact on people's lives."
+
+  utter_data_privacy:
+  - text: "Omdena takes data privacy and confidentiality very seriously. The organization has strict policies and procedures in place to ensure that all data is handled securely and in compliance with applicable laws and regulations."
+
+  utter_get_involved:
+  - text: "If your organization is interested in working with Omdena, you can reach out to the organization through their website. Omdena is always looking for mission-driven organizations to collaborate with on AI projects for social good."
+
+  utter_expertise:
+  - text: "Omdena has a global community of data scientists, machine learning engineers, and domain experts with expertise in a wide range of areas. This expertise allows Omdena to work on a wide range of projects and to bring together the right people to tackle each project."
+
+  utter_quality_assurance:
+  - text: "Omdena has a rigorous quality assurance process in place to ensure that all work meets the highest standards. This process includes peer review, code review, and testing to ensure that all work is accurate, reliable, and effective."
+
+  utter_impact:
+  - text: "Omdena's work has a positive impact on people's lives around the world. The organization has worked on projects that have helped to improve access to clean water, reduce energy poverty, and improve case management for NGOs, among other things."
+  
+  ## ADD SECTION HERE
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
