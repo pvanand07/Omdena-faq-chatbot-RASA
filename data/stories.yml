@@ -2,72 +2,191 @@ version: "3.1"
 
 stories:
 
-- story: Omdena Overview
+- story: Greeting
   steps:
-  - intent: ask_omdena
-  - action: utter_omdena_overview
+  - intent: greet
+  - action: utter_greet
 
-- story: Omdena AI Challenge
+- story: Careers in omdena
   steps:
-  - intent: ask_ai_challenge
-  - action: utter_ai_challenge_description
+  - intent: careers_in_omdena
+  - action: utter_careers_in_omdena
 
-- story: Omdena Collaborator Benefits
+- story: Open positions in omdena
   steps:
-  - intent: ask_collaborator_benefits
-  - action: utter_collaborator_benefits
+  - intent: omdena_open_positions
+  - action: utter_omdena_open_positions
+  - intent: applying_at_omdena
+  - action: utter_applying_at_omdena
 
-- story: Engaging as a Collaborator
+- story: AI product Careers
   steps:
-  - intent: ask_engage_collaborator
-  - action: utter_engage_collaborator
+  - intent: requirements_ai_product_carreer
+  - action: utter_requirements_ai_product_carreer
+  - intent: process_ai_product_carreer
+  - action: utter_process_ai_product_carreer
+  - intent: leadership_in_omdena_challenge
+  - action: utter_leadership_in_omdena_challenge
+  - intent: careers_page_link
+  - action: utter_careers_page_link
 
-- story: No AI Experience
-  steps:
-  - intent: ask_no_ai_experience
-  - action: utter_no_ai_experience
+# - story: AI product Careers 2
+#   steps:
+#   - intent: product_manager_role
+#   - action: utter_product_manager_role
+#   - intent: marketing_growth_manager_position
+#   - action: utter_marketing_growth_manager_position
+#   - intent: content_marketer_position
+#   - action: utter_content_marketer_position
+#   - intent: careers_page_link
+#   - action: utter_careers_page_link
 
-- story: Participation Assessment
+- story: Community manager role
   steps:
-  - intent: ask_participation_assessment
-  - action: utter_participation_assessment
+  - intent: become_community_manager
+  - action: utter_become_community_manager
+  - intent: community_manager_skills
+  - action: utter_community_manager_skills
+  - intent: community_manager_role
+  - action: utter_community_manager_role
+  - intent: requirements_community_manager_role
+  - action: utter_requirements_community_manager_role
+  - intent: careers_page_link
+  - action: utter_careers_page_link
 
-- story: Omdena Website Information
+- story: ai engineer role
   steps:
-  - intent: ask_website_info
-  - action: utter_website_info
+  - intent: become_ai_engineer
+  - action: utter_become_ai_engineer
+  - intent: ai_engineer_skills
+  - action: utter_ai_engineer_skills
+  - intent: ai_engineer_role
+  - action: utter_ai_engineer_role
+  - intent: requirements_ai_engineer
+  - action: utter_requirements_ai_engineer
+  - intent: careers_page_link
+  - action: utter_careers_page_link
 
-- story: Omdena Works Overview
+- story: ai researcher role
   steps:
-  - intent: ask_omdena_works
-  - action: utter_omdena_works
+  - intent: greet
+  - action: utter_greet
+  - intent: become_ai_researcher
+  - action: utter_become_ai_researcher
+  - intent: ai_researcher_skills
+  - action: utter_ai_researcher_skills
+  - intent: ai_researcher_role
+  - action: utter_ai_researcher_role
+  - intent: requirements_ai_researcher
+  - action: utter_requirements_ai_researcher
+  - intent: careers_page_link
+  - action: utter_careers_page_link
 
-- story: Omdena Projects
+- story: interactive_story_1
   steps:
-  - intent: ask_projects
-  - action: utter_projects
+  - intent: greet
+  - action: utter_greet
 
-- story: Data Privacy and Confidentiality
+- story: interactive_story_2
   steps:
-  - intent: ask_data_privacy
-  - action: utter_data_privacy
+  - intent: omdena_open_positions
+  - action: utter_omdena_open_positions
+  - intent: goodbye
+  - action: utter_goodbye
+  - intent: become_ai_researcher
+  - intent: applying_at_omdena
 
-- story: Getting Involved with Omdena
+- story: interactive_story_3
   steps:
-  - intent: ask_get_involved
-  - action: utter_get_involved
+  - intent: become_community_manager
+  - action: utter_become_community_manager
+  - intent: community_manager_skills
+  - action: utter_community_manager_skills
+  - intent: nlu_fallback
+  - intent: community_manager_role
+  - action: utter_community_manager_role
+  - intent: nlu_fallback
+  - intent: requirements_community_manager_role
+  - action: utter_requirements_community_manager_role
+  - intent: careers_page_link
+  - action: utter_careers_page_link
 
-- story: Omdena Expertise
+- story: interactive_story_1
   steps:
-  - intent: ask_expertise
-  - action: utter_expertise
+  - intent: greet
+  - action: utter_greet
+  - intent: become_ai_engineer
+  - action: utter_become_ai_engineer
+  - intent: community_manager_skills
+  - intent: ai_engineer_skills
+  - action: utter_ai_engineer_skills
+  - intent: community_manager_role
+  - intent: ai_engineer_role
+  - action: utter_ai_engineer_role
+  - intent: nlu_fallback
+  - intent: requirements_ai_engineer
+  - action: utter_requirements_ai_engineer
+  - intent: careers_page_link
+  - action: utter_careers_page_link
 
-- story: Quality Assurance at Omdena
+- story: interactive_story_1
   steps:
-  - intent: ask_quality_assurance
-  - action: utter_quality_assurance
+  - intent: greet
+  - action: utter_greet
+  - intent: careers_in_omdena
+  - action: utter_careers_in_omdena
+  - intent: become_ai_researcher
+  - action: utter_become_ai_engineer
 
-- story: Impact of Omdena's Work
+- story: interactive_story_1
   steps:
-  - intent: ask_impact
-  - action: utter_impact
+  - intent: greet
+  - action: utter_greet
+  - intent: become_ai_researcher
+  - action: utter_become_ai_researcher
+  - intent: community_manager_skills
+  - intent: ai_researcher_skills
+  - action: utter_ai_researcher_skills
+  - intent: ai_researcher_role
+  - action: utter_ai_researcher_role
+  - intent: requirements_ai_engineer
+  - action: utter_requirements_ai_engineer
+  - intent: careers_page_link
+  - action: utter_careers_page_link
+
+- story: interactive_story_1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: careers_in_omdena
+  - action: utter_careers_in_omdena
+  - intent: become_community_manager
+  - action: utter_become_community_manager
+  - intent: ai_researcher_skills
+  - intent: community_manager_skills
+  - action: utter_community_manager_skills
+  - intent: ai_engineer_role
+  - intent: community_manager_role
+  - action: utter_community_manager_role
+  - intent: careers_page_link
+  - action: utter_careers_page_link
+
+- story: interactive_story_1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: careers_in_omdena
+  - action: utter_careers_in_omdena
+  - intent: community_manager_role
+  - action: utter_community_manager_role
+
+- story: interactive_story_1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: careers_in_omdena
+  - action: utter_careers_in_omdena
+  - intent: become_ai_engineer
+  - action: utter_become_ai_engineer
+  - intent: ai_engineer_role
+  - action: utter_ai_engineer_role
