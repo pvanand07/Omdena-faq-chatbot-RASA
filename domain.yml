@@ -53,6 +53,8 @@ responses:
   - text: Good bye
   utter_iamabot:
   - text: I am a bot
+  utter_please_rephrase:
+  - text: I'm sorry, I didn't quite understand that. Could you rephrase?
   
   ## SECTION 1 -COLLABORATOR CAREER PATH
   utter_community_manager_role:
