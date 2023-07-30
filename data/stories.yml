@@ -67,119 +67,22 @@ stories:
   - intent: requirements_ai_engineer
   - action: utter_requirements_ai_engineer
 
-- story: ai researcher role
+- story: become ai researcher
   steps:
-  - intent: greet
-  - action: utter_greet
   - intent: become_ai_researcher
   - action: utter_become_ai_researcher
+
+- story: ai researcher skills
+  steps:
   - intent: ai_researcher_skills
   - action: utter_ai_researcher_skills
+
+- story: ai researcher role
+  steps:
   - intent: ai_researcher_role
   - action: utter_ai_researcher_role
   - intent: requirements_ai_researcher
   - action: utter_requirements_ai_researcher
-
-- story: interactive_story_1
-  steps:
-  - intent: greet
-  - action: utter_greet
-
-- story: interactive_story_2
-  steps:
-  - intent: omdena_open_positions
-  - action: utter_omdena_open_positions
-  - intent: goodbye
-  - action: utter_goodbye
-  - intent: become_ai_researcher
-  - intent: applying_at_omdena
-
-- story: interactive_story_3
-  steps:
-  - intent: become_community_manager
-  - action: utter_become_community_manager
-  - intent: community_manager_skills
-  - action: utter_community_manager_skills
-  - intent: nlu_fallback
-  - intent: community_manager_role
-  - action: utter_community_manager_role
-  - intent: nlu_fallback
-  - intent: requirements_community_manager_role
-  - action: utter_requirements_community_manager_role
-
-- story: interactive_story_1
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: become_ai_engineer
-  - action: utter_become_ai_engineer
-  - intent: community_manager_skills
-  - intent: ai_engineer_skills
-  - action: utter_ai_engineer_skills
-  - intent: community_manager_role
-  - intent: ai_engineer_role
-  - action: utter_ai_engineer_role
-  - intent: nlu_fallback
-  - intent: requirements_ai_engineer
-  - action: utter_requirements_ai_engineer
-
-- story: interactive_story_1
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: careers_in_omdena
-  - action: utter_careers_in_omdena
-  - intent: become_ai_researcher
-  - action: utter_become_ai_engineer
-
-- story: interactive_story_1
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: become_ai_researcher
-  - action: utter_become_ai_researcher
-  - intent: community_manager_skills
-  - intent: ai_researcher_skills
-  - action: utter_ai_researcher_skills
-  - intent: ai_researcher_role
-  - action: utter_ai_researcher_role
-  - intent: requirements_ai_engineer
-  - action: utter_requirements_ai_engineer
-
-- story: interactive_story_1
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: careers_in_omdena
-  - action: utter_careers_in_omdena
-  - intent: become_community_manager
-  - action: utter_become_community_manager
-  - intent: ai_researcher_skills
-  - intent: community_manager_skills
-  - action: utter_community_manager_skills
-  - intent: ai_engineer_role
-  - intent: community_manager_role
-  - action: utter_community_manager_role
-
-- story: interactive_story_1
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: careers_in_omdena
-  - action: utter_careers_in_omdena
-  - intent: community_manager_role
-  - action: utter_community_manager_role
-
-- story: interactive_story_1
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: careers_in_omdena
-  - action: utter_careers_in_omdena
-  - intent: become_ai_engineer
-  - action: utter_become_ai_engineer
-  - intent: ai_engineer_role
-  - action: utter_ai_engineer_role
 
 ##--------------------------- FAQ QUESTIONS --------------------------- ###
 
@@ -255,3 +158,4 @@ stories:
 
 
   ##-----------------ADD YOUR SECTION HERE -----------------------##
+
