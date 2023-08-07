@@ -27,7 +27,11 @@ nlu:
   examples: |
     - I'm talking about [omdena projects](entity_type)
     - The topic is [omdena projects](entity_type)
+    - about the topic [omdena projects](entity_type)
     - I'm referring to [local chapters](entity_type)
+    - about [local chapters](entity_type)
+    - about the topic [local chapters](entity_type)
+    
 
 entities:
   - entity_type
