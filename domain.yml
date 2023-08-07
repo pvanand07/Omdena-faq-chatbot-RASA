@@ -14,23 +14,27 @@ entities:
 
 responses:
   utter_about_omdena_projects:
-  - text: "Omdena projects are collaborative projects where AI enthusiasts come together to solve real-world challenges."
+  - text: "Omdena projects are collaborative projects where AI \
+  enthusiasts come together to solve real-world challenges."
 
   utter_link_omdena_projects:
-  - text: "Sure! You can find more about Omdena projects at [their official website](https://omdena.com/projects/)."
+  - text: "Sure! You can find more about Omdena projects at \
+  their official website-https://omdena.com/projects/."
 
   utter_ask_which_link:
   - text: "Which specific link are you referring to?"
 
   utter_about_local_chapters:
-  - text: "Omdena local chapters are regional communities where AI enthusiasts come together for local events, meetups, and projects."
+  - text: "Omdena local chapters are regional communities where\
+   AI enthusiasts come together for local events, meetups, and projects."
 
   utter_link_local_chapters:
-  - text: "Sure! You can find more about Omdena local chapters at [the respective page on their website](https://omdena.com/local-chapters/)."
+  - text: "Sure! You can find more about Omdena local chapters at \
+  the respective page on their website - https://omdena.com/local-chapters/."
 
-actions:
-  - utter_about_omdena_projects
-  - utter_link_omdena_projects
-  - utter_ask_which_link
-  - utter_about_local_chapters
-  - utter_link_local_chapters
+# actions:
+#   - utter_about_omdena_projects
+#   - utter_link_omdena_projects
+#   - utter_ask_which_link
+#   - utter_about_local_chapters
+#   - utter_link_local_chapters

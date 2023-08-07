@@ -1,44 +1,7 @@
 version: "3.1"
 nlu:
 
-## ----------------------------------DEFAULT INTENTS----------------------------- ##
-
-- intent: greet
-  examples: |
-    - hey
-    - hello
-    - hi
-    - hello there
-    - good morning
-    - good evening
-    - moin
-    - hey there
-    - let's go
-    - hey dude
-    - goodmorning
-    - goodevening
-    - good afternoon
-- intent: goodbye
-  examples: |
-    - cu
-    - good by
-    - cee you later
-    - good night
-    - bye
-    - goodbye
-    - have a nice day
-    - see you around
-    - bye bye
-    - see you later
-    - y
-- intent: bot_challenge
-  examples: |
-    - are you a bot?
-    - are you a human?
-    - am I talking to a bot?
-    - am I talking to a human?
-
-###----------------INTENTS FROM COLLABORATOR CAREER PATH--------------------###
+###----------------INTENTS FOR FOLLOW UP QUESTIONS--------------------###
 - intent: ask_omdena_projects
   examples: |
     - what are omdena projects?
@@ -51,6 +14,8 @@ nlu:
     - give me the link for that
     - I want a link to omdena projects
     - link please
+    - give link
+    - can you give a link
 
 - intent: ask_local_chapters
   examples: |

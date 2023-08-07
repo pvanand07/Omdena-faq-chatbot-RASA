@@ -1,14 +1,8 @@
 version: "3.1"
 
 stories:
-##----------- DEFAULT STORIES ----------------##
-- story: Greeting
-  steps:
-  - intent: greet
-  - action: utter_greet
-
 ##-------------FOLLOW UP QUESTIONS-------------##
-## TYPE - 1 
+## ----------TYPE - 1------------- ##
 - story: user asks about omdena projects and then wants link
   steps:
   - intent: ask_omdena_projects
@@ -23,7 +17,7 @@ stories:
   - intent: provide_link
   - action: utter_link_local_chapters
 
-## TYPE - 2
+## ----------TYPE - 2--------##
 - story: user directly asks for link
   steps:
   - intent: provide_link
