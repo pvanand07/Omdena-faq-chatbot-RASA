@@ -7,155 +7,37 @@ stories:
   - intent: greet
   - action: utter_greet
 
-- story: Careers in omdena
+##-------------FOLLOW UP QUESTIONS-------------##
+## TYPE - 1 
+- story: user asks about omdena projects and then wants link
   steps:
-  - intent: careers_in_omdena
-  - action: utter_careers_in_omdena
+  - intent: ask_omdena_projects
+  - action: utter_about_omdena_projects
+  - intent: provide_link
+  - action: utter_link_omdena_projects
 
-- story: Open positions in omdena
+- story: user asks about omdena local chapters and then wants link
   steps:
-  - intent: omdena_open_positions
-  - action: utter_omdena_open_positions
+  - intent: ask_local_chapters
+  - action: utter_about_local_chapters
+  - intent: provide_link
+  - action: utter_link_local_chapters
 
-- story: Applying at omdena
+## TYPE - 2
+- story: user directly asks for link
   steps:
-  - intent: applying_at_omdena
-  - action: utter_applying_at_omdena
+  - intent: provide_link
+  - action: utter_ask_which_link
+  - intent: inform
+    entities:
+    - entity_type: "omdena projects"
+  - action: utter_link_omdena_projects
 
-- story: AI product Careers
+- story: user directly asks for local chapters link
   steps:
-  - intent: requirements_ai_product_carreer
-  - action: utter_requirements_ai_product_carreer
-  - intent: process_ai_product_carreer
-  - action: utter_process_ai_product_carreer
-
-- story: AI product Careers
-  steps:
-  - intent: leadership_in_omdena_challenge
-  - action: utter_leadership_in_omdena_challenge
- 
-- story: Asking for career page link
-  steps:
-  - intent: careers_page_link
-  - action: utter_careers_page_link
-
-- story: Community manager role
-  steps:
-  - intent: become_community_manager
-  - action: utter_become_community_manager
-  - intent: community_manager_skills
-  - action: utter_community_manager_skills
-
-- story: Community manager requirements
-  steps: 
-  - intent: community_manager_role
-  - action: utter_community_manager_role
-  - intent: requirements_community_manager_role
-  - action: utter_requirements_community_manager_role
-
-- story: ai engineer role
-  steps:
-  - intent: become_ai_engineer
-  - action: utter_become_ai_engineer
-  - intent: ai_engineer_skills
-  - action: utter_ai_engineer_skills
-
-- story: ai engineer requirements
-  steps: 
-  - intent: ai_engineer_role
-  - action: utter_ai_engineer_role
-  - intent: requirements_ai_engineer
-  - action: utter_requirements_ai_engineer
-
-- story: become ai researcher
-  steps:
-  - intent: become_ai_researcher
-  - action: utter_become_ai_researcher
-
-- story: ai researcher skills
-  steps:
-  - intent: ai_researcher_skills
-  - action: utter_ai_researcher_skills
-
-- story: ai researcher role
-  steps:
-  - intent: ai_researcher_role
-  - action: utter_ai_researcher_role
-  - intent: requirements_ai_researcher
-  - action: utter_requirements_ai_researcher
-
-##--------------------------- FAQ QUESTIONS --------------------------- ###
-
-- story: Omdena Overview
-  steps:
-  - intent: ask_omdena
-  - action: utter_omdena_overview
-
-- story: Omdena AI Challenge
-  steps:
-  - intent: ask_ai_challenge
-  - action: utter_ai_challenge_description
-
-- story: Omdena Collaborator Benefits
-  steps:
-  - intent: ask_collaborator_benefits
-  - action: utter_collaborator_benefits
-
-- story: Engaging as a Collaborator
-  steps:
-  - intent: ask_engage_collaborator
-  - action: utter_engage_collaborator
-
-- story: No AI Experience
-  steps:
-  - intent: ask_no_ai_experience
-  - action: utter_no_ai_experience
-
-- story: Participation Assessment
-  steps:
-  - intent: ask_participation_assessment
-  - action: utter_participation_assessment
-
-- story: Omdena Website Information
-  steps:
-  - intent: ask_website_info
-  - action: utter_website_info
-
-- story: Omdena Works Overview
-  steps:
-  - intent: ask_omdena_works
-  - action: utter_omdena_works
-
-- story: Omdena Projects
-  steps:
-  - intent: ask_projects
-  - action: utter_projects
-
-- story: Data Privacy and Confidentiality
-  steps:
-  - intent: ask_data_privacy
-  - action: utter_data_privacy
-
-- story: Getting Involved with Omdena
-  steps:
-  - intent: ask_get_involved
-  - action: utter_get_involved
-
-- story: Omdena Expertise
-  steps:
-  - intent: ask_expertise
-  - action: utter_expertise
-
-- story: Quality Assurance at Omdena
-  steps:
-  - intent: ask_quality_assurance
-  - action: utter_quality_assurance
-
-- story: Impact of Omdena's Work
-  steps:
-  - intent: ask_impact
-  - action: utter_impact
-
-
-  ##-----------------ADD YOUR SECTION HERE -----------------------##
-
+  - intent: provide_link
+  - action: utter_ask_which_link
+  - intent: inform
+    entities:
+    - entity_type: "local chapters"
+  - action: utter_link_local_chapters

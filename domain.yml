@@ -1,157 +1,36 @@
 version: '3.1'
-intents:
-
-## SECTION 1 -COLLABORATOR CAREER PATH
-- ai_engineer_role
-- ai_engineer_skills
-- ai_researcher_role
-- ai_researcher_skills
-- applying_at_omdena
-- become_ai_engineer
-- become_ai_researcher
-- become_community_manager
-- bot_challenge
-- careers_in_omdena
-- careers_page_link
-- community_manager_role
-- community_manager_skills
-- content_marketer_position
-- goodbye
-- greet
-- leadership_in_omdena_challenge
-- marketing_growth_manager_position
-- omdena_open_positions
-- process_ai_product_carreer
-- product_manager_role
-- requirements_ai_engineer
-- requirements_ai_product_carreer
-- requirements_ai_researcher
-- requirements_community_manager_role
-
-## SECTION 2- FAQ QUESTIONS
-- ask_omdena
-- ask_ai_challenge
-- ask_collaborator_benefits
-- ask_engage_collaborator
-- ask_no_ai_experience
-- ask_participation_assessment
-- ask_website_info
-- ask_omdena_works
-- ask_projects
-- ask_data_privacy
-- ask_get_involved
-- ask_expertise
-- ask_quality_assurance
-- ask_impact
-
-## ADD SECTION HERE
-
-responses:
-  utter_greet:
-  - text: Hello! How can I assist you today?
-  utter_goodbye:
-  - text: Good bye
-  utter_iamabot:
-  - text: I am a bot
-  utter_please_rephrase:
-  - text: I'm sorry, I didn't quite understand that. Could you rephrase?
-  
-  ## SECTION 1 -COLLABORATOR CAREER PATH
-  utter_community_manager_role:
-  - text: |-
-      The role of a Community Manager at Omdena involves helping to grow the community in new locations and countries
-      2.They work closely with Omdena Local chapters and the Omdena school team2 3.The Community Manager plays a crucial role in fostering engagement and collaboration within the data science community
-      4.They contribute to the growth of Omdena's platform for real-world AI projects across 100 countries
-      5.The Community Manager is responsible for creating a supportive and inclusive environment for members to connect, learn, and make an impact
-      6.They are passionate about making a real impact in their local region or country Overall, the Community Manager at Omdena plays a vital role in building and nurturing the data science community and supporting the organization's mission.
-  utter_become_community_manager:
-  - text: 1.Either join a Local Chapter Challenge or an AI Innovation Challenge to experience first-hand how Omdena projects work. 2.By opening a new Local Chapter in your country, you will have the opportunity to build a community, supported by Omdena. 3.In the Omdena Impact Program, you will be collaborating with leading partner organizations so you can make things happen for real! 4.Once a month, Omdena highlights the lead of the month. If you commit to your Local Chapter, you will get special recognition for your impact.
-  utter_ai_researcher_role:
-  - text: The role of an AI Researcher at Omdena involves implementing machine learning algorithms and collaborating with peers to organize research ideas into action. AI Researchers work on real-world AI projects with teams of up to 50 AI engineers and data scientists who collaboratively develop real-world solutions. They are responsible for developing cutting-edge AI models and may work on closed-source or open-source projects, depending on project requirements. AI Researchers at Omdena have product ownership skills and are passionate about building AI for social good and making an impact. They work collaboratively with other team members, including project managers and AI product owners. Overall, the role of an AI Researcher at Omdena is to use their skills and expertise to develop AI solutions that address real-world challenges and make a positive impact on society.
-  utter_product_manager_role:
-  - text: ' The Product Manager role at Omdena involves overseeing the development of AI projects from ideation to execution'
-  utter_become_ai_engineer:
-  - text: 1.By joining an AI Innovation Challenge you will work with a team of 50 collaborators to develop AI solutions for real-world problems. 2.During the Innovation Challenge, lead a key task and drive progress with the team to showcase your willingness to take the lead. 3.Complete at least two AI Innovation Challenges and have the opportunity to work on paid projects as an Omdena Top Talent. 4.Now, you have built the skills and project portfolio to stand out in the data science job market.
-  utter_ai_engineer_role:
-  - text: The role of an AI Engineer at Omdena involves working on real-world AI projects with teams of up to 50 AI engineers and data scientists who collaboratively develop solutions. They are responsible for developing AI models, deploying models, and working with data and infrastructure. AI Engineers at Omdena are passionate about building AI for social good and making an impact. They have advanced computing skills and experience in machine learning and data science. AI Engineers at Omdena work collaboratively with other team members, including project managers and AI product owners. Overall, the role of an AI Engineer at Omdena is to use their skills and expertise to develop AI solutions that address real-world challenges and make a positive impact on society.
-  utter_ai_engineer_skills:
-  - text: 1.Data science 2.Team collaboration 3.Being able to communicate and bridge a team of up to 50 collaborators from diverse backgrounds. 4.Being able to learn and adapt in a dynamic environment.
-  utter_requirements_ai_engineer:
-  - text: 1.A very good grasp in computer science and/or mathematics 2.Programming experience with Python 3.A basic understanding of Machine Learning (e.g. through online courses)
-  utter_leadership_in_omdena_challenge:
-  - text: ' To take a leadership role during an Omdena AI Innovation Challenge, you should be proactive and willing to take the lead on a key task. You should also be able to communicate effectively with your team and drive progress towards the goal of developing an AI solution for the real-world problem at hand.'
-  utter_become_ai_researcher:
-  - text: 1.Join a Local Chapter Challenge to develop AI solutions for real-world problems. All code is made open source in Local Chapter Challenges. 2.Write a research article on the work done in the Local Chapter Challenge and get it presented or published at an international conference. 3.Share your knowledge through launching your own course via Omdena School and teaching a class of 50-100 students. 4.Join Omdena Journal of Applied AI as an editor. Edit the journal content and review others’ submitted articles.
-  utter_applying_at_omdena:
-  - text: Individuals can apply for open positions at Omdena by visiting the organization's website and submitting their resume and cover letter. The process for joining the team involves a series of interviews and assessments to ensure that candidates are a good fit for the organization's culture and values.
-  utter_careers_in_omdena:
-  - text: 'Omdena offers several career paths for individuals interested in AI and machine learning. These career paths include: AI Product Development: This path involves developing AI products and solutions for businesses and organizations Community Development: This path involves building and growing the Omdena community, as well as supporting and mentoring other members AI Engineering: This path involves designing and implementing AI systems and infrastructure AI Research: This path involves conducting research in AI and machine learning, as well as developing new algorithms and models'
-  utter_content_marketer_position:
-  - text: |-
-      A content marketer is responsible for researching, planning, creating, and distributing content for businesses of all sizes with the goal of attracting leads and turning them into customers through educational, valuable content. They are both storytellers and data analysts, and their ultimate goal is to work as part of the company's overall digital marketing strategy by identifying and engaging with the target audience in a way that is meaningful to them.
-      At Omdena, a content marketer is a full-time position. As a content marketer at Omdena, one would have the opportunity to shape the narrative, analyze content distribution performance, and play a crucial role in promoting AI products and engaging the target audience.
-  utter_requirements_community_manager_role:
-  - text: 1..Basic knowledge of programming 2.Curiosity and willingness to learn 3.Project management interest
-  utter_community_manager_skills:
-  - text: 'These are the key skills required: 1.Project identification and execution 2.Community management 3.Leadership skills 4.Data science know-how '
-  utter_ai_researcher_skills:
-  - text: 1.Research capabilities 2.Being able to fulfill requirements and ethical compliance to conduct the research. 3.Building the qualities and approaches for being an effective researcher 4.Developing the skills to work with a diverse team and ensure the wider impact of the research.
-  utter_requirements_ai_researcher:
-  - text: 1.Academic experience 2.Competency in scientific writing 3.Familiarity with research design paradigms
-  utter_process_ai_product_carreer:
-  - text: The process for becoming an AI product owner involves joining an Omdena AI Innovation Challenge, taking a leadership role during the challenge, managing another AI Innovation Challenge as a product manager, and gaining the skills to build AI products. Along the way, you will develop diverse team management skills, communication skills, and AI product development experience.
-  utter_requirements_ai_product_carreer:
-  - text: The key skills required to become an AI product owner include leadership skills, data science problem-solving skills, product development skills, and cultural awareness. These skills are developed through participating in Omdena AI Innovation Challenges and managing them as a product manager.
-  utter_marketing_growth_manager_position:
-  - text: The role of the Marketing Growth Manager at Omdena involves developing and executing content strategies to promote AI or technology solutions. The responsibilities may include creating engaging content, managing social media channels, optimizing marketing campaigns, and analyzing data to drive growth.
-  utter_omdena_open_positions:
-  - text: The open positions currently available at Omdena can be found on the careers page.
-  utter_careers_page_link:
-  - text: 'Visit omdena careers page for more details: https://omdena.com/careers/'
-  utter_omdena_overview:
-  - text: "Omdena is an innovation platform where AI experts from around the world collaborate on building solutions for positive impact."
-  
-  ## SECTION 2- FAQ QUESTIONS
-  utter_ai_challenge_description:
-  - text: "Omdena challenges follow four key principles: bottom-up collaboration, transparent communication, active participation, and asking questions. In an Omdena challenge, there is no top-down structure, and collaborators are expected to show self-drive and self-management capabilities to succeed."
-
-  utter_collaborator_benefits:
-  - text: "Omdena offers several benefits to its collaborators, including the opportunity to work on real-world problems, access to data, diverse opinions, and the chance to drive true innovation."
-
-  utter_engage_collaborator:
-  - text: "To engage as a collaborator, you can reach out to a Task Leader or Product Owner and offer to pitch in. If you need further guidance, you can always ask for help."
-
-  utter_no_ai_experience:
-  - text: "Omdena welcomes collaborators with all levels of experience, including those who are new to AI. The platform provides a learning environment and offers opportunities for skill development."
-
-  utter_participation_assessment:
-  - text: "Your level of participation will be assessed each week based on your collaboration via coding, data wrangling, and taking a leadership role in the challenge. Active participation is important, and those who do not actively participate may be asked to leave the project."
-
-  utter_website_info:
-  - text: "You can visit the Omdena website, specifically the FAQ section, for more information about the platform and how it works."
-
-  utter_omdena_works:
-  - text: "Omdena works by bringing together a global community of data scientists, machine learning engineers, and domain experts to work on AI projects for social good. The community collaborates with mission-driven organizations to build AI solutions that address real-world problems."
-
-  utter_projects:
-  - text: "Omdena works on a wide range of projects, from tackling energy shortages in Nigeria to improving case management for NGOs. The projects are focused on using AI for social good and are designed to have a positive impact on people's lives."
-
-  utter_data_privacy:
-  - text: "Omdena takes data privacy and confidentiality very seriously. The organization has strict policies and procedures in place to ensure that all data is handled securely and in compliance with applicable laws and regulations."
-
-  utter_get_involved:
-  - text: "If your organization is interested in working with Omdena, you can reach out to the organization through their website. Omdena is always looking for mission-driven organizations to collaborate with on AI projects for social good."
-
-  utter_expertise:
-  - text: "Omdena has a global community of data scientists, machine learning engineers, and domain experts with expertise in a wide range of areas. This expertise allows Omdena to work on a wide range of projects and to bring together the right people to tackle each project."
-
-  utter_quality_assurance:
-  - text: "Omdena has a rigorous quality assurance process in place to ensure that all work meets the highest standards. This process includes peer review, code review, and testing to ensure that all work is accurate, reliable, and effective."
-
-  utter_impact:
-  - text: "Omdena's work has a positive impact on people's lives around the world. The organization has worked on projects that have helped to improve access to clean water, reduce energy poverty, and improve case management for NGOs, among other things."
-  
-  ## ADD SECTION HERE
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
+
+intents:
+  - ask_omdena_projects
+  - provide_link
+  - ask_local_chapters
+  - inform
+
+entities:
+  - entity_type
+
+responses:
+  utter_about_omdena_projects:
+  - text: "Omdena projects are collaborative projects where AI enthusiasts come together to solve real-world challenges."
+
+  utter_link_omdena_projects:
+  - text: "Sure! You can find more about Omdena projects at [their official website](https://omdena.com/projects/)."
+
+  utter_ask_which_link:
+  - text: "Which specific link are you referring to?"
+
+  utter_about_local_chapters:
+  - text: "Omdena local chapters are regional communities where AI enthusiasts come together for local events, meetups, and projects."
+
+  utter_link_local_chapters:
+  - text: "Sure! You can find more about Omdena local chapters at [the respective page on their website](https://omdena.com/local-chapters/)."
+
+actions:
+  - utter_about_omdena_projects
+  - utter_link_omdena_projects
+  - utter_ask_which_link
+  - utter_about_local_chapters
+  - utter_link_local_chapters

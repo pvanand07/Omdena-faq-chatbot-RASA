@@ -39,248 +39,30 @@ nlu:
     - am I talking to a human?
 
 ###----------------INTENTS FROM COLLABORATOR CAREER PATH--------------------###
+- intent: ask_omdena_projects
+  examples: |
+    - what are omdena projects?
+    - tell me about omdena projects
+    - omdena projects?
 
-- intent: careers_in_omdena
+- intent: provide_link
   examples: |
-    - What careers are available at Omdena?
-    - Tell me about careers in Omdena.
-    - Job opportunities in Omdena?
-    - Careers at omdena
-    - what job available omdena
-    - what careers are in omdena
-    - which careers are in omdena
-    - tell me about rasa careers
-    - what are the careers available in omdena
-- intent: requirements_ai_product_carreer
-  examples: |
-    - requirements Omdena's AI Product Development?
-    - Requirements for joining AI Product Development at Omdena?
-    - requirements ai product developer
-    - requirements ai product career
-- intent: process_ai_product_carreer
-  examples: |
-    - How can I become an AI product owner at Omdena?
-    - Process for becoming an AI product owner at Omdena?
-    - Steps to become ai product developer
-    - how to become ai product owner
-    - How to become an AI product owner at Omdena?
-    - Can you explain the process for becoming an AI product owner at Omdena?
-    - What are the steps to become an AI product developer?
-    - How can I become an AI product owner?
-    - Please tell me the process to become an AI product owner.
-- intent: leadership_in_omdena_challenge
-  examples: |
-    - How do I take a leadership role during an Omdena AI Innovation Challenge?
-    - Can I become a leader in Omdena's AI Innovation Challenge?
-    - leadership in omdena challenge how to
-    - how do i become a leader in a project
-- intent: omdena_open_positions
-  examples: |
-    - What open positions are available at Omdena currently?
-    - Any job openings at Omdena right now?
-    - current open positions in omdena
-    - what job openigs are available
-    - tell me about open jobs
-    - what open positions are available at omdena
-- intent: careers_page_link
-  examples: |
-    - Where can I find the open positions at Omdena?
-    - How do I access the careers page for Omdena's job listings?
-    - Where can i find more details on open jobs
-    - where can i find open positions at omdena
-    - where can i get more details
-    - how to find open positions
-    - where can i find open positions
-- intent: applying_at_omdena
-  examples: |
-    - How do I apply for open positions at Omdena?
-    - What is the process to join the team at Omdena?
-    - how to apply for open jobs
-    - how can i join omdana
-- intent: product_manager_role
-  examples: |
-    - Product Manager role at Omdena?
-    - What does a Product Manager do at Omdena?
-    - Tell me about Product Manager position.
-- intent: marketing_growth_manager_position
-  examples: |
-    - Responsibilities of Marketing Growth Manager at Omdena?
-    - What does the Marketing Growth Manager do?
-    - Tell me about Marketing Growth Manager role.
-- intent: content_marketer_position
-  examples: |
-    - Describe the Content Marketer role.
-    - Is the Content Marketer position full-time?
-    - Content Marketer responsibilities?
-- intent: become_community_manager
-  examples: |
-    - How to become a Community Manager at Omdena?
-    - Can I apply for the Community Manager role?
-    - Steps to become a Community Manager.
-    - how to become a community manager
-- intent: community_manager_skills
-  examples: |
-    - Skills required for a Community Manager?
-    - What expertise do I need as a Community Manager?
-    - Community Manager skill set.
-    - what are the skills required community manager
-- intent: community_manager_role
-  examples: |
-    - Tell me about the Community Manager role.
-    - What does a Community Manager at Omdena do?
-    - Explain the responsibilities of a Community Manager.
-    - tell me about the role of community manager
-    - what is the role community manager
-    - tell me about community development position
-- intent: requirements_community_manager_role
-  examples: |
-    - Community Manager role requirements?
-    - What are the prerequisites for becoming a Community Manager?
-    - Eligibility for Community Manager position.
-    - what is the eligibility of community manager role
-    - requirements of community manager position
-- intent: become_ai_engineer
-  examples: |
-    - How to become an AI Engineer?
-    - Steps to become an AI Engineer.
-    - Can you guide me on becoming an AI Engineer?
-    - how can i become ai engineer
-    - how to become an ai engineer
-- intent: ai_engineer_skills
-  examples: |
-    - Skills needed for an AI Engineer?
-    - What skills do I require to be an AI Engineer?
-    - AI Engineer skill set.
-    - what are the skills for ai engineer
-    - what skills I need for ai engineer
-- intent: ai_engineer_role
-  examples: |
-    - What does an AI Engineer do?
-    - Tell me about the role of AI Engineer.
-    - Explain AI Engineer responsibilities.
-    - what are the responsibilities ai engineer
-    - what is the role of ai engineer
-- intent: requirements_ai_engineer
-  examples: |
-    - Requirements for becoming an AI Engineer
-    - Eligibility criteria for AI Engineer role.
-    - What do I need to qualify as an AI Engineer
-    - waht are the qualifications of ai engineer
-    - what are the requirements of ai engineer
-- intent: become_ai_researcher
-  examples: |
-    - How can I become an AI Researcher?
-    - Steps to become an AI Researcher.
-    - Guide me on pursuing a career as an AI Researcher.
-    - how can i become an ai researcher
-    - how to become ai researcher
-- intent: ai_researcher_skills
-  examples: |
-    - Skills required to be an AI Researcher?
-    - What skills do I need for AI Researcher position?
-    - AI Researcher skill set.
-    - what are the skills for ai researcher
-    - what are the skills required for ai researcher
-- intent: ai_researcher_role
-  examples: |
-    - What is the role of an AI Researcher?
-    - Tell me about the responsibilities of an AI Researcher.
-    - Explain the job of an AI Researcher.
-    - explain the role of ai researcher
+    - can you provide a link?
+    - give me the link for that
+    - I want a link to omdena projects
+    - link please
 
-- intent: requirements_ai_engineer
+- intent: ask_local_chapters
   examples: |
-    - Requirements for becoming an AI researcher
-    - eligibility for ai researcher
-    - what do I need to qualify as an ai researcher
+    - tell me about omdena local chapters
+    - what are local chapters in omdena?
+    - omdena local chapters?
 
-###---------------INTENTS FOR FAQ QUESTIONS---------------###
-
-- intent: ask_omdena
+- intent: inform
   examples: |
-    - What is Omdena?
-    - Tell me about Omdena
-    - Explain Omdena
-    - What does Omdena do?
+    - I'm talking about [omdena projects](entity_type)
+    - The topic is [omdena projects](entity_type)
+    - I'm referring to [local chapters](entity_type)
 
-- intent: ask_ai_challenge
-  examples: |
-    - How does an Omdena AI challenge work?
-    - Explain Omdena AI challenge
-    - What are the principles of Omdena AI challenges?
-    - How can I participate in an Omdena AI challenge?
-
-- intent: ask_collaborator_benefits
-  examples: |
-    - What are the benefits of being an Omdena collaborator?
-    - Tell me about Omdena collaborator benefits
-    - Why should I collaborate with Omdena?
-    - What advantages do Omdena collaborators get?
-
-- intent: ask_engage_collaborator
-  examples: |
-    - How can I engage as a collaborator?
-    - What should I do to become an Omdena collaborator?
-    - Can you guide me on engaging with Omdena?
-
-- intent: ask_no_ai_experience
-  examples: |
-    - What if I have no experience in AI?
-    - Can I join Omdena without AI experience?
-    - Is AI expertise required to participate in Omdena challenges?
-
-- intent: ask_participation_assessment
-  examples: |
-    - How is participation assessed in an Omdena challenge?
-    - What criteria are used to evaluate participation in Omdena challenges?
-    - How do you measure the involvement of collaborators in a challenge?
-
-- intent: ask_website_info
-  examples: |
-    - Where can I find more information about Omdena?
-    - Tell me about the Omdena website
-    - How can I access details about Omdena on the internet?
-
-- intent: ask_omdena_works
-  examples: |
-    - What is Omdena's working approach?
-    - How does Omdena work?
-    - Explain how Omdena operates.
-
-- intent: ask_projects
-  examples: |
-    - What kind of projects does Omdena work on?
-    - Can you give me examples of Omdena projects?
-    - Tell me about the projects undertaken by Omdena.
-
-- intent: ask_data_privacy
-  examples: |
-    - How does Omdena ensure data privacy and confidentiality?
-    - What measures are taken to protect data privacy at Omdena?
-    - Is my data safe when collaborating with Omdena?
-
-- intent: ask_get_involved
-  examples: |
-    - How can my organization get involved with Omdena?
-    - Is there a way for my company to collaborate with Omdena?
-    - Can you guide me on how to partner with Omdena?
-
-- intent: ask_expertise
-  examples: |
-    - What kind of expertise does Omdena have?
-    - Tell me about the skills and knowledge of Omdena collaborators.
-    - What expertise is available in the Omdena community?
-
-- intent: ask_quality_assurance
-  examples: |
-    - How does Omdena ensure the quality of its work?
-    - What processes are in place to maintain work quality at Omdena?
-    - Is there a quality assurance mechanism at Omdena?
-
-- intent: ask_impact
-  examples: |
-    - What is the impact of Omdena's work?
-    - How has Omdena contributed to social good?
-    - Tell me about the positive outcomes of Omdena projects.
-
-###------------------------ADD YOUR SECTION HERE----------------------------###
+entities:
+  - entity_type
