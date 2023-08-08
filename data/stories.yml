@@ -7,14 +7,14 @@ stories:
   steps:
   - intent: ask_omdena_projects
   - action: utter_about_omdena_projects
-  - intent: provide_link
+  - intent: provide_link_project
   - action: utter_link_omdena_projects
 
 - story: user asks about omdena local chapters and then wants link
   steps:
   - intent: ask_local_chapters
   - action: utter_about_local_chapters
-  - intent: provide_link
+  - intent: provide_link_local_chapter
   - action: utter_link_local_chapters
 
 ## ----------TYPE - 2--------##

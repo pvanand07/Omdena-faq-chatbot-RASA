@@ -12,6 +12,24 @@ nlu:
   examples: |
     - can you provide a link?
     - give me the link for that
+    - I want a links
+    - link please
+    - give link
+    - can you give a link
+
+# - intent: provide_link_project
+#   examples: |
+#     - can you provide a link for projects?
+#     - give me the link for projects
+#     - I want a link to omdena projects
+#     - link please
+#     - give link
+#     - can you give a link
+
+- intent: provide_link_local_chapter
+  examples: |
+    - can you provide a link?
+    - give me the link for that
     - I want a link to omdena projects
     - link please
     - give link
