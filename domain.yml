@@ -7,6 +7,7 @@ intents:
 - greeting
 - bot_capabilities
 - project_help
+- inform_role
 
 entities:
 - user_role

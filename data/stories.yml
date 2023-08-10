@@ -5,7 +5,7 @@ stories:
   steps:
   - intent: greeting
   - action: utter_greeting
-  - action: action_reset_slots
+# - action: action_reset_slots
 
 - story: bot capabilities path
   steps:
