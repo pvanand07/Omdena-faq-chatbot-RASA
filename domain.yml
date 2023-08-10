@@ -4,37 +4,112 @@ session_config:
   carry_over_slots_to_new_session: true
 
 intents:
-  - ask_omdena_projects
-  - provide_link
-  - ask_local_chapters
-  - inform
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - book_flight
+  - inform_flight_details
+  - inform_passenger_details
+  - inform_payment_details
 
 entities:
-  - entity_type
+  - from_city
+  - to_city
+  - departure_date
+  - return_date
+  - passenger_name
+  - passenger_email
+  - passenger_phone
+  - payment_method
 
+# slots:
+#   from_city:
+#     type: text
+#     mappings:
+#       - type: from_entity
+#         entity: from_city
+#       - type: from_text
+#   to_city:
+#     type: text
+#     mappings:
+#       - type: from_entity
+#         entity: to_city
+#       - type: from_text
+#   departure_date:
+#     type: text
+#     mappings:
+#       - type: from_entity
+#         entity: departure_date
+#       - type: from_text
+#   return_date:
+#     type: text
+#     mappings:
+#       - type: from_entity
+#         entity: return_date
+#       - type: from_text
+#   passenger_name:
+#     type: text
+#     mappings:
+#       - type: from_entity
+#         entity: passenger_name
+#       - type: from_text
+#   passenger_email:
+#     type: text
+#     mappings:
+#       - type: from_entity
+#         entity: passenger_email
+#       - type: from_text
+#   passenger_phone:
+#     type: text
+#     mappings:
+#       - type: from_entity
+#         entity: passenger_phone
+#       - type: from_text
+#   payment_method:
+#     type: text
+#     mappings:
+#       - type: from_entity
+#         entity: payment_method
+#       - type: from_text
+
+
+slots:
+  from_city:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: from_city
+  to_city:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: to_city
+ 
+  departure_date:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: departure_date
+     
+   
 responses:
-  utter_about_omdena_projects:
-  - text: "Omdena projects are collaborative projects where AI \
-  enthusiasts come together to solve real-world challenges."
+  utter_greet:
+    - text: "Hello! How can I assist you today?"
+  utter_goodbye:
+    - text: "Thank you for using our service. Have a great day!"
+  utter_ask_from_city:
+    - text: "From which city would you like to depart?"
+  utter_ask_from_and_to_city:
+    - text: "From which city to which city would you like to travel?"
+  utter_ask_to_city:
+    - text: "To which city would you like to travel?"
+  utter_ask_departure_date:
+    - text: "When would you like to depart?"
+  utter_confirm_booking:
+    - text: "Great! I have booked your flight from {from_city} to {to_city} on {departure_date}."
+  utter_error:
+    - text: "I'm sorry, I didn't understand. Please try again."
 
-  utter_link_omdena_projects:
-  - text: "Sure! You can find more about Omdena projects at \
-  their official website-https://omdena.com/projects/."
-
-  utter_ask_which_link:
-  - text: "Which specific link are you referring to?"
-
-  utter_about_local_chapters:
-  - text: "Omdena local chapters are regional communities where\
-   AI enthusiasts come together for local events, meetups, and projects."
-
-  utter_link_local_chapters:
-  - text: "Sure! You can find more about Omdena local chapters at \
-  the respective page on their website - https://omdena.com/local-chapters/."
-
-# actions:
-#   - utter_about_omdena_projects
-#   - utter_link_omdena_projects
-#   - utter_ask_which_link
-#   - utter_about_local_chapters
-#   - utter_link_local_chapters
+actions:
+  - action_output_details

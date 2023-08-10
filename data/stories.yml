@@ -1,37 +1,73 @@
 version: "3.1"
 
-stories:
 ##-------------FOLLOW UP QUESTIONS-------------##
 ## ----------TYPE - 1------------- ##
-- story: user asks about omdena projects and then wants link
-  steps:
-  - intent: ask_omdena_projects
-  - action: utter_about_omdena_projects
-  - intent: provide_link_project
-  - action: utter_link_omdena_projects
+actions:
+  - action_output_details
 
-- story: user asks about omdena local chapters and then wants link
-  steps:
-  - intent: ask_local_chapters
-  - action: utter_about_local_chapters
-  - intent: provide_link_local_chapter
-  - action: utter_link_local_chapters
+stories:
+# - story: Book a flight
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: book_flight
+#   - action: utter_ask_from_city
+#   - intent: inform_flight_details
+#     entities:
+#     - from_city: "New York"
+#   - slot_was_set:
+#     - from_city: "New York"
+#   - action: utter_ask_to_city
+#   - intent: inform_flight_details
+#     entities:
+#     - to_city: "Los Angeles"
+#   - slot_was_set:
+#     - to_city: "Los Angeles"
+#   - action: utter_ask_departure_date
+#   - intent: inform_flight_details
+#     entities:
+#     - departure_date: "August 15th"
+#   - slot_was_set:
+#     - departure_date: "August 15th"
+#   #- action: action_output_details
+#   - action: utter_confirm_booking
 
-## ----------TYPE - 2--------##
-- story: user directly asks for link
+- story: Book a flight (Single User Input for From & To)
   steps:
-  - intent: provide_link
-  - action: utter_ask_which_link
-  - intent: inform
+  - intent: greet
+  - action: utter_greet
+  - intent: book_flight
+  - action: utter_ask_from_and_to_city
+  - intent: inform_flight_details
     entities:
-    - entity_type: "omdena projects"
-  - action: utter_link_omdena_projects
-
-- story: user directly asks for local chapters link
-  steps:
-  - intent: provide_link
-  - action: utter_ask_which_link
-  - intent: inform
+    - from_city: 
+        - type: from_entity
+          entity: from_city
+        - type: from_text
+    - to_city: 
+        - type: from_entity
+          entity: to_city
+        - type: from_text
+  - slot_was_set:
+    - from_city: 
+        - type: from_entity
+          entity: from_city
+        - type: from_text
+    - to_city: 
+        - type: from_entity
+          entity: to_city
+        - type: from_text
+  - action: utter_ask_departure_date
+  - intent: inform_flight_details
     entities:
-    - entity_type: "local chapters"
-  - action: utter_link_local_chapters
+    - departure_date: 
+        - type: from_entity
+          entity: departure_date
+        - type: from_text
+  - slot_was_set:
+    - departure_date: 
+        - type: from_entity
+          entity: departure_date
+        - type: from_text
+  #- action: action_output_details
+  - action: utter_confirm_booking
