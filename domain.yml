@@ -11,6 +11,11 @@ intents:
 entities:
 - user_role
 
+slots:
+  user_role:
+    type: text
+    influence_conversation: true
+
 responses:
   utter_greeting:
   - text: "Hello! How can I assist you?"
@@ -23,3 +28,6 @@ responses:
   
   utter_project_help_with_role:
   - text: "Of course! How can I assist you further as a {user_role}?"
+
+actions:
+- action_reset_slots

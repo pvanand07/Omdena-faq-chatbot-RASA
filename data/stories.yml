@@ -5,28 +5,49 @@ stories:
   steps:
   - intent: greeting
   - action: utter_greeting
+  - action: action_reset_slots
 
 - story: bot capabilities path
   steps:
   - intent: bot_capabilities
   - action: utter_bot_capabilities
 
-- story: project help without role
+- story: project help without role (developer response)
   steps:
   - intent: project_help
   - action: utter_ask_user_role
+  - intent: inform_role
+    entities:
+      - user_role: "developer"
+  - slot_was_set:
+    - user_role: "developer"
+  - action: utter_project_help_with_role
 
-- story: project help with role
+- story: project help without role (client response)
+  steps:
+  - intent: project_help
+  - action: utter_ask_user_role
+  - intent: inform_role
+    entities:
+      - user_role: "client"
+  - slot_was_set:
+    - user_role: "client"
+  - action: utter_project_help_with_role
+
+- story: project help with role developer
   steps:
   - intent: project_help
     entities:
       - user_role: "developer"
+  - slot_was_set:
+    - user_role: "developer"
   - action: utter_project_help_with_role
 
-- story: project help with role
+- story: project help with role client
   steps:
   - intent: project_help
     entities:
       - user_role: "client"
+  - slot_was_set:
+    - user_role: "client"
   - action: utter_project_help_with_role
-
