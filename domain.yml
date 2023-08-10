@@ -46,3 +46,4 @@ responses:
 actions:
 - action_reset_slots
 - action_help_with_role
+- action_general_help

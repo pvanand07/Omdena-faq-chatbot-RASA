@@ -29,29 +29,27 @@
 
 from typing import Any, Text, Dict, List
 from rasa_sdk import Action, Tracker
-from rasa_sdk.events import SlotSet
+from rasa_sdk.events import SlotSet, FollowupAction
 from rasa_sdk.executor import CollectingDispatcher
 import random
 
-# Modified from @Rohit Garg's code https://github.com/rohitkg83/Omdena/blob/master/actions/actions.py
-class ProjectHelp(Action):
+class GeneralHelp(Action):
     def name(self) -> Text:
-        return "general_help"
+        return "action_general_help"
 
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
         
-        user_role = next(tracker.get_latest_entity_values("user_role"), None)
+        user_role = tracker.slots.get("user_role", None)
         
         if user_role is None:
             dispatcher.utter_message(text="Sure! Are you a developer or a client representing an organization?")
-            return [SlotSet("requested_slot", "user_role")]
         else:
-            return [ActionExecuted("action_help_with_role")]
+            return [FollowupAction("action_help_with_role")]
 
-
-class ActionGreetUserType(Action):
+# Modified from @Rohit Garg's code https://github.com/rohitkg83/Omdena/blob/master/actions/actions.py
+class ActionHelpWithRole(Action):
 
     def name(self) -> Text:
         return "action_help_with_role"
@@ -62,17 +60,16 @@ class ActionGreetUserType(Action):
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
 
         # Get the value of the first_occurrence_user_type slot
-        current_user_type = next(tracker.get_latest_entity_values("user_role"), None)
+        current_user_type = tracker.slots.get("user_role", None)
    
         if current_user_type == 'developer':
             msg = "Thanks a lot for providing the details. You can join one of our local chapter and collaborate on " \
                     "various projects and challenges to Develop Your Skills, Get Recognized, and Make an Impact. Please " \
-                    "visit https://omdena.com/community for more details. How can I help you today? "
+                    "visit https://omdena.com/community for more details. Do you have any other questions? "
 
         elif current_user_type == 'client':
             msg = "Thanks a lot for providing the details. With us you can Innovate, Deploy and Scale " \
-                    "AI Solutions in Record Time. For more details please visit https://omdena.com/offerings. How can I " \
-                    "help you today? "
+                    "AI Solutions in Record Time. For more details please visit https://omdena.com/offerings. Do you have any other questions? "
         else:
             msg = "Please enter either developer or client"
 
