@@ -4,37 +4,22 @@ session_config:
   carry_over_slots_to_new_session: true
 
 intents:
-  - ask_omdena_projects
-  - provide_link
-  - ask_local_chapters
-  - inform
+- greeting
+- bot_capabilities
+- project_help
 
 entities:
-  - entity_type
+- user_role
 
 responses:
-  utter_about_omdena_projects:
-  - text: "Omdena projects are collaborative projects where AI \
-  enthusiasts come together to solve real-world challenges."
+  utter_greeting:
+  - text: "Hello! How can I assist you?"
 
-  utter_link_omdena_projects:
-  - text: "Sure! You can find more about Omdena projects at \
-  their official website-https://omdena.com/projects/."
+  utter_bot_capabilities:
+  - text: "I'm here to answer questions related to the omdena.com website. How can I assist you?"
 
-  utter_ask_which_link:
-  - text: "Which specific link are you referring to?"
-
-  utter_about_local_chapters:
-  - text: "Omdena local chapters are regional communities where\
-   AI enthusiasts come together for local events, meetups, and projects."
-
-  utter_link_local_chapters:
-  - text: "Sure! You can find more about Omdena local chapters at \
-  the respective page on their website - https://omdena.com/local-chapters/."
-
-# actions:
-#   - utter_about_omdena_projects
-#   - utter_link_omdena_projects
-#   - utter_ask_which_link
-#   - utter_about_local_chapters
-#   - utter_link_local_chapters
+  utter_ask_user_role:
+  - text: "Sure! Are you a developer or a client representing an organization?"
+  
+  utter_project_help_with_role:
+  - text: "Of course! How can I assist you further as a {user_role}?"

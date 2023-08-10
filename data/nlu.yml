@@ -2,54 +2,23 @@ version: "3.1"
 nlu:
 
 ###----------------INTENTS FOR FOLLOW UP QUESTIONS--------------------###
-- intent: ask_omdena_projects
+
+
+- intent: greeting
   examples: |
-    - what are omdena projects?
-    - tell me about omdena projects
-    - omdena projects?
+    - Hi
+    - Hello
+    - Hey
 
-- intent: provide_link
+- intent: bot_capabilities
   examples: |
-    - can you provide a link?
-    - give me the link for that
-    - I want a links
-    - link please
-    - give link
-    - can you give a link
+    - What can you do?
+    - What's your function?
+    - Tell me your capabilities.
 
-# - intent: provide_link_project
-#   examples: |
-#     - can you provide a link for projects?
-#     - give me the link for projects
-#     - I want a link to omdena projects
-#     - link please
-#     - give link
-#     - can you give a link
-
-- intent: provide_link_local_chapter
+- intent: project_help
   examples: |
-    - can you provide a link?
-    - give me the link for that
-    - I want a link to omdena projects
-    - link please
-    - give link
-    - can you give a link
-
-- intent: ask_local_chapters
-  examples: |
-    - tell me about omdena local chapters
-    - what are local chapters in omdena?
-    - omdena local chapters?
-
-- intent: inform
-  examples: |
-    - I'm talking about [omdena projects](entity_type)
-    - The topic is [omdena projects](entity_type)
-    - about the topic [omdena projects](entity_type)
-    - I'm referring to [local chapters](entity_type)
-    - about [local chapters](entity_type)
-    - about the topic [local chapters](entity_type)
-    
-
-entities:
-  - entity_type
+    - Can you help me with a project?
+    - I need help with my project.
+    - Can you assist me on this project as a [developer](user_role)?
+    - I'm a [client](user_role) looking for assistance.

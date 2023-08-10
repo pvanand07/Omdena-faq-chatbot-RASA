@@ -1,37 +1,32 @@
 version: "3.1"
-
 stories:
-##-------------FOLLOW UP QUESTIONS-------------##
-## ----------TYPE - 1------------- ##
-- story: user asks about omdena projects and then wants link
-  steps:
-  - intent: ask_omdena_projects
-  - action: utter_about_omdena_projects
-  - intent: provide_link_project
-  - action: utter_link_omdena_projects
 
-- story: user asks about omdena local chapters and then wants link
+- story: greeting path
   steps:
-  - intent: ask_local_chapters
-  - action: utter_about_local_chapters
-  - intent: provide_link_local_chapter
-  - action: utter_link_local_chapters
+  - intent: greeting
+  - action: utter_greeting
 
-## ----------TYPE - 2--------##
-- story: user directly asks for link
+- story: bot capabilities path
   steps:
-  - intent: provide_link
-  - action: utter_ask_which_link
-  - intent: inform
+  - intent: bot_capabilities
+  - action: utter_bot_capabilities
+
+- story: project help without role
+  steps:
+  - intent: project_help
+  - action: utter_ask_user_role
+
+- story: project help with role
+  steps:
+  - intent: project_help
     entities:
-    - entity_type: "omdena projects"
-  - action: utter_link_omdena_projects
+      - user_role: "developer"
+  - action: utter_project_help_with_role
 
-- story: user directly asks for local chapters link
+- story: project help with role
   steps:
-  - intent: provide_link
-  - action: utter_ask_which_link
-  - intent: inform
+  - intent: project_help
     entities:
-    - entity_type: "local chapters"
-  - action: utter_link_local_chapters
+      - user_role: "client"
+  - action: utter_project_help_with_role
+
