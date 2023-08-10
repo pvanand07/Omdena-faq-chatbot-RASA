@@ -12,42 +12,42 @@ stories:
   - intent: bot_capabilities
   - action: utter_bot_capabilities
 
-- story: project help without role
+- story: project help without role (developer response)
   steps:
   - intent: project_help
   - action: utter_ask_user_role
-  - checkpoint: roleCheckpoint
-
-- story: project help without role (developer response)
-  steps:
-  - checkpoint: roleCheckpoint
   - intent: inform_role
     entities:
       - user_role: "developer"
   - slot_was_set:
     - user_role: "developer"
-  - action: utter_project_help_with_developer
+  - action: utter_project_help_with_role
 
 - story: project help without role (client response)
   steps:
-  - checkpoint: roleCheckpoint
+  - intent: project_help
+  - action: utter_ask_user_role
   - intent: inform_role
     entities:
       - user_role: "client"
   - slot_was_set:
     - user_role: "client"
-  - action: utter_project_help_with_client
+  - action: utter_project_help_with_role
 
 - story: project help with role developer
   steps:
   - intent: project_help
     entities:
       - user_role: "developer"
-  - action: utter_project_help_with_developer
+  - slot_was_set:
+    - user_role: "developer"
+  - action: utter_project_help_with_role
 
 - story: project help with role client
   steps:
   - intent: project_help
     entities:
       - user_role: "client"
-  - action: utter_project_help_with_client
+  - slot_was_set:
+    - user_role: "client"
+  - action: utter_project_help_with_role

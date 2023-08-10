@@ -33,5 +33,15 @@ responses:
   utter_project_help_with_role:
   - text: "Of course! How can I assist you further as a {user_role}?"
 
+  utter_project_help_with_developer:
+  - text: "Thanks a lot for providing the details. You can join one of our local chapter and collaborate on \n
+                      various projects and challenges to Develop Your Skills, Get Recognized, and Make an Impact. Please \n
+                      visit https://omdena.com/community for more details. Do you need help with something else?"
+
+  utter_project_help_with_client:
+  - text: "Thanks a lot for providing the details. With us you can Innovate, Deploy and Scale \n
+                      AI Solutions in Record Time. For more details please visit https://omdena.com/offerings.\n
+                      Do you need help with something else?"
+
 actions:
 - action_reset_slots

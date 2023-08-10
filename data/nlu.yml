@@ -22,6 +22,7 @@ nlu:
     - I need help with my project.
     - Can you assist me on this project as a [developer](user_role)?
     - I'm a [client](user_role) looking for assistance.
+    - I'm a [client](user_role) representing an organization
 
 - intent: inform_role
   examples: |
