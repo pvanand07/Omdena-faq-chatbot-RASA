@@ -15,6 +15,9 @@ slots:
   user_role:
     type: text
     influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: user_role
 
 responses:
   utter_greeting:
