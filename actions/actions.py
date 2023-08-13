@@ -121,7 +121,7 @@ class ActionEligibilityClassify(Action):
         last_intent = tracker.slots.get("local_chapter", None)
 
         # Check if the last intent was 'local_chapter'
-        if last_intent == 'local_chapter':
+        if last_intent == 'local chapter':
             dispatcher.utter_message(template="utter_local_chapter_participation_eligibility")
         else:
             msg = "I'm sorry, I didn't understand your question. Could you please rephrase?"
@@ -142,7 +142,7 @@ class ActionCostClassify(Action):
         last_intent = tracker.slots.get("local_chapter", None)
 
         # Check if the last intent was 'local_chapter'
-        if last_intent == 'local_chapter':
+        if last_intent == 'local chapter':
             dispatcher.utter_message(template="utter_local_chapter_cost")
         else:
             msg = "I'm sorry, I didn't understand your question. Could you please rephrase?"
