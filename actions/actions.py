@@ -118,7 +118,7 @@ class ActionEligibilityClassify(Action):
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
 
         # Get the value of the latest intent 
-        last_intent = tracker.latest_message['intent'].get('name')
+        last_intent = tracker.slots.get("local_chapter", None)
 
         # Check if the last intent was 'local_chapter'
         if last_intent == 'local_chapter':
@@ -139,7 +139,7 @@ class ActionCostClassify(Action):
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
 
         # Get the value of the latest intent 
-        last_intent = tracker.latest_message['intent'].get('name')
+        last_intent = tracker.slots.get("local_chapter", None)
 
         # Check if the last intent was 'local_chapter'
         if last_intent == 'local_chapter':
