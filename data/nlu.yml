@@ -1,4 +1,4 @@
-version: 3.1
+version: "3.1"
 nlu:
 
 ###----------------INTENTS FOR FOLLOW UP QUESTIONS--------------------###
@@ -51,6 +51,7 @@ nlu:
 - intent: local_chapter_inquire_local_chapter_programs
   examples: |
     - What is [local chapter](local_chapter)?
+    - What are [local chapter](local_chapter)?
     - Tell me about the [local chapter](local_chapter)
     - What do the [local chapters](local_chapter) do?
     - what is [local chapters](local_chapter)
@@ -75,7 +76,7 @@ nlu:
     - Please help me understand the joining process.
     - What are the steps to join?
 
-- intent: enquire_eligibility_general
+- intent: eligibility_general
   examples: |
     - Can anyone participate?
     - What are the qualifications required to participate?

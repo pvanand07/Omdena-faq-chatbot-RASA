@@ -81,8 +81,8 @@ stories:
   - intent: eligibility_general
   - action: action_eligibility_classify
 
-
 - story: General request for cost
   steps:
   - intent: cost_general
   - action: action_cost_classify
+

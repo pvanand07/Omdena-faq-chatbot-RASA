@@ -103,8 +103,49 @@ class ActionJoinClassify(Action):
         if last_intent == 'local chapter':
             dispatcher.utter_message(template="utter_join_chapter")
         else:
-            msg = "Can you repeat the question?"
+            msg = "I'm sorry, I didnt understand your question, Could you please rephrase?"
             dispatcher.utter_message(text=msg)
 
+
+class ActionEligibilityClassify(Action):
+
+    def name(self) -> Text:
+        return "action_eligibility_classify"
+
+    def run(self,
+            dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+        # Get the value of the latest intent 
+        last_intent = tracker.latest_message['intent'].get('name')
+
+        # Check if the last intent was 'local_chapter'
+        if last_intent == 'local_chapter':
+            dispatcher.utter_message(template="utter_local_chapter_participation_eligibility")
+        else:
+            msg = "I'm sorry, I didn't understand your question. Could you please rephrase?"
+            dispatcher.utter_message(text=msg)
+
+ 
+class ActionCostClassify(Action):
+
+    def name(self) -> Text:
+        return "action_cost_classify"
+
+    def run(self,
+            dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+        # Get the value of the latest intent 
+        last_intent = tracker.latest_message['intent'].get('name')
+
+        # Check if the last intent was 'local_chapter'
+        if last_intent == 'local_chapter':
+            dispatcher.utter_message(template="utter_local_chapter_cost")
+        else:
+            msg = "I'm sorry, I didn't understand your question. Could you please rephrase?"
+            dispatcher.utter_message(text=msg)
 
         
