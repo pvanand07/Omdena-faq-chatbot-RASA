@@ -68,8 +68,9 @@ responses:
     - text: "To contact the organizers of a specific Omdena local chapter, you can find their contact information on the Local Chapters page of our website (https://omdena.com/local-chapters/). Reach out to them directly for any inquiries, suggestions, or collaboration opportunities. Also visit our Growth stories of Local Chapter Leads section to get inspired by their stories and path with us."
 ## Local Chapter Pankaj ##
   utter_join_chapter:
-    - text: 'You can join local chapters by either joining as a chapter lead or by joining as collaborator to the local chapter challenge.
-        you can also join local chapter as a university or educational institution partner.'
+    - text: 'You can join local chapters by either joining as collaborator to the local chapter challenge or as a chapter lead or
+        you can also join local chapter as a university or educational institution partner.
+        To join the local chapter, please visit our website at https://omdena.com/local-chapters/. Do you have any other questions?'
 
 
 actions:

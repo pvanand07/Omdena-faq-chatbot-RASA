@@ -85,3 +85,26 @@ class ResetSlotsAction(Action):
         slots_to_reset = ["user_role"]  # Add the names of the slots you want to reset
         events = [SlotSet(slot, None) for slot in slots_to_reset]
         return events
+
+class ActionJoinClassify(Action):
+
+    def name(self) -> Text:
+        return "action_join_classify"
+
+    def run(self,
+            dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+        # Get the value of the latest intent 
+        last_intent = tracker.slots.get("local_chapter", None)
+
+        # Check if the last intent was 'local_chapter'
+        if last_intent == 'local chapter':
+            dispatcher.utter_message(template="utter_join_chapter")
+        else:
+            msg = "Can you repeat the question?"
+            dispatcher.utter_message(text=msg)
+
+
+        

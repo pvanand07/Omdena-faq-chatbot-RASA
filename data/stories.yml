@@ -71,18 +71,18 @@ stories:
 
 ##-------General-Classified using Entities----------##
 
-- story: Genral request for joining
+- story: General request for joining
   steps:
   - intent: join_general
   - action: action_join_classify
 
-- story: Genral request for eligibility
+- story: General request for eligibility
   steps:
   - intent: eligibility_general
   - action: action_eligibility_classify
 
 
-- story: Genral request for cost
+- story: General request for cost
   steps:
   - intent: cost_general
   - action: action_cost_classify
