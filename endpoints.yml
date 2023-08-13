@@ -14,7 +14,7 @@
 #  url: "http://localhost:5055/webhook"
 
 action_endpoint:
- url: "http://localhost:5055/webhook"
+ url: "https://pvanand-rasa-omdena-demo-model-feature-followup-8f6a2c7.hf.space/webhook"
  
 
 # Tracker store which is used to store the conversations.

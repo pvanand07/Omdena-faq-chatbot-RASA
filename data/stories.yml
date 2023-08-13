@@ -68,7 +68,7 @@ stories:
   - slot_was_set:
     - local_chapter: "local chapter"
   - action: utter_local_chapter_inquire_local_chapter_programs
-
+  
 ##-------General-Classified using Entities----------##
 
 - story: General request for joining

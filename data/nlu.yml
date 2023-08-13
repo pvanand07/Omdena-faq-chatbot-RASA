@@ -38,26 +38,26 @@ nlu:
 - intent: join_chapter
   examples: |
     - Join a [local chapter](local_chapter) now
-    - How to get involved in a [local chapter](local_chapter)?
+    - How to get involved in a [local chapters](local_chapter)?
     - Participate in a [local chapter](local_chapter)
-    - What's the process to become a member of an [Local Chapter](local_chapter)?
-    - How can I get involved with [Local Chapters](local_chapter)?
-    - Tell me about joining a [Local Chapter](local_chapter)
-    - How to join [Local Chapter](local_chapter)
+    - What's the process to become a member of an [local chapters](local_chapter)?
+    - How can I get involved with [local chapters](local_chapter)?
+    - Tell me about joining a [local chapters](local_chapter)
+    - How to join [local chapter](local_chapter)
 
-####---------NLU-ARPIT -LOCAL CHAPTER----------------######
+####---------NLU-ARPIT -lOCAL cHAPTER----------------######
 
 
 - intent: local_chapter_inquire_local_chapter_programs
   examples: |
     - What is [local chapter](local_chapter)?
-    - What are [local chapter](local_chapter)?
+    - What are [local chapters](local_chapter)?
     - Tell me about the [local chapter](local_chapter)
     - What do the [local chapters](local_chapter) do?
-    - what is [local chapters](local_chapter)
-    - Can you explain the [local chapter](local_chapter)
+    - what is [local chapter](local_chapter)
+    - Can you explain the [local chapters](local_chapter)
     - Tell me a bit about [local chapter](local_chapter)
-    - What does the [local chapter](local_chapter) involve?
+    - What does the [local chapters](local_chapter) involve?
     - give me about [local chapter](local_chapter)?
 
 - intent: join_general
@@ -128,7 +128,7 @@ nlu:
 - intent: local_chapter_lead_local_chapter
   examples: |
     - Can I start my own Omdena local chapter?
-    - Can I lead a local Chapter?
+    - Can I lead a local chapter?
     - Can I create a local chapter?
     - Is it possible for me to initiate my own Omdena local chapter?
     - How can I go about starting my own Omdena local chapter?
@@ -160,3 +160,8 @@ nlu:
     - Is there a designated platform to reach out to the organizers of Omdena local chapters?
     - How can I connect with the individuals responsible for organizing a local Omdena chapter?
 
+synonym: local_chapter
+  - local chapter
+  - local chapters
+  - Local Chapter
+  - Local Chapters
